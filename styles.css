@@ -52,3 +52,32 @@ form {
 .hidden {
   display: none;
 }
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+
+th {
+  background-color: gray;
+  border-left: 1px solid black;
+}
+
+table {
+  border: solid black 2px;
+}
+
+td {
+  border: none;
+  border-left: 1px solid black;
+  width: 200px;
+}
+
+td,
+th,
+table {
+  border-collapse: collapse;
+}
