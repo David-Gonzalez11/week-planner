@@ -13,3 +13,8 @@
   justify-content: center;
   box-shadow: 5px 5px 0 0 black;
 }
+
+.add-entry {
+  box-shadow: 3px 3px 0 0 black;
+  border: solid 1px black;
+}
