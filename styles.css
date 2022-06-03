@@ -14,9 +14,15 @@
   padding-left: 30px;
   padding-top: 6px;
   padding-bottom: 6px;
-  background-color: rgb(149, 188, 241);
+  background-color: rgb(255, 255, 255);
   justify-content: center;
   box-shadow: 5px 5px 0 0 black;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: rgb(163, 217, 217);
 }
 
 .add-entry {
@@ -68,16 +74,35 @@ th {
 
 table {
   border: solid black 2px;
+  width: 700px;
 }
 
 td {
   border: none;
   border-left: 1px solid black;
-  width: 200px;
+  width: 5px;
 }
 
 td,
 th,
 table {
   border-collapse: collapse;
+  margin: auto;
+}
+
+span {
+  background-color: rgb(255, 255, 255);
+  border: solid 2px black;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+span:hover {
+  background-color: grey;
 }
