@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-btn {
+  display: flex;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: rgb(149, 188, 241);
+  justify-content: center;
+  box-shadow: 5px 5px 0 0 black;
+}
