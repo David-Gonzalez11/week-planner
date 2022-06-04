@@ -2,7 +2,9 @@ var modalButton = document.querySelector('.modal-btn');
 modalButton.addEventListener('click', handleClick);
 var form = document.querySelector('form');
 var spans = document.querySelectorAll('span');
-spans.addEventListener('click', handleClickedButton);
+window.addEventListener('click', handleClickedButton);
+var $heading = document.querySelector('h3');
+$heading.addEventListener('click', handleClickedButton);
 function handleClick(event) {
   if (event.target === modalButton) {
     form.classList.remove('hidden');
@@ -19,12 +21,13 @@ function handleClickedButton(event) {
     for (var i = 0; i < spans.length; i++) {
       if (spans[i] === event.target) {
         spans[i].className = '';
-      } else {
-        spans[i].className = 'hidden';
+        $heading.textContent = 'Scheduled Events for ' + event.target.textContent;
       }
     }
   }
 }
+var newObj = {
+};
 /* var dummyData = [
   {
     time: '8: 00',
